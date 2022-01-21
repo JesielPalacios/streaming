@@ -51,10 +51,10 @@
 
       const loadCamara = (stream) => {
         video.srcObject = stream;
-        publicaMensaje("Camara funcionando");
+        publicaMensaje("La cámara está funcionando.");
       };
 
-      const errorCamara = () => publicaMensaje("Camara a fallado reinicia");
+      const errorCamara = () => publicaMensaje("La cámara ha fallado, reinicie la página o los ajuste de su cámara.");
 
       const verVideo = (video, context) => {
         context.drawImage(video, 0, 0, context.width, context.height);
